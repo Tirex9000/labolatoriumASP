@@ -19,13 +19,7 @@
     <tbody>
         @foreach (var b in @Model)
         {
-            @* <partial name="_BookRow" model="b" /> *@
-            <tr>
-                <td>@b.Title</td>
-                <td>@b.Author</td>
-                <td>@b.PublicationDate?.Year</td>
-                <td>@b.Price.ToString("C")</td>
-            </tr> 
+            <partial name="_BookRow" model="b" />
         }
     </tbody>
 </table>

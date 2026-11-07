@@ -54,6 +54,15 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    
+    public IActionResult HttpStatus(int code)
+    {
+        Response.StatusCode = code;
+        // Możesz zwrócić widok z opisem błędu
+        return View($"Error{code}"); 
+    }
+
+    public IActionResult Boom() => throw new InvalidOperationException("Celowy wyjątek");
 }
 
 

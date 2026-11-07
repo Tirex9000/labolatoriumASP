@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace labapp.Controllers;
 
+
+[ServiceFilter(typeof(LogActionFilter))] 
 public class BookController : Controller
 {
     public async Task<IActionResult> ByYear(int year)

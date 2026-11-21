@@ -1,11 +1,14 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using labapp.Models;
+using labapp.Models.ef;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -30,7 +33,11 @@ public class Program
         builder.Services.AddSingleton<RequestStats>();
 
         builder.Services.AddControllersWithViews();
+        
+        builder.Services.AddDbContext<AppDbContext>(o => o.UseSqlite(builder.Configuration.GetConnectionString("Default")));
 
+        builder.Services.AddScoped<IBookService, BookService>();     // jedna instancja na żądanie
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

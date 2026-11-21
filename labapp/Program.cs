@@ -76,7 +76,7 @@ public class Program
         app.MapControllerRoute("docs", "docs/{*path}",
             new { controller = "Home", action = "Docs" });
         
-        // app.Run();
+        app.Run();
     }
 }
 

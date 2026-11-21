@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R03DQSQtidE=",
+  "dgSpecHash": "xfTpvHWc9MA=",
   "success": true,
   "projectFilePath": "/home/tirex/RiderProjects/labolatoriumASP/labapp/labapp.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "/home/tirex/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.15/microsoft.entityframeworkcore.relational.10.0.15.nupkg.sha512",
     "/home/tirex/.nuget/packages/microsoft.entityframeworkcore.sqlite/10.0.15/microsoft.entityframeworkcore.sqlite.10.0.15.nupkg.sha512",
     "/home/tirex/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/10.0.15/microsoft.entityframeworkcore.sqlite.core.10.0.15.nupkg.sha512",
+    "/home/tirex/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.15/microsoft.entityframeworkcore.tools.10.0.15.nupkg.sha512",
     "/home/tirex/.nuget/packages/microsoft.extensions.dependencymodel/10.0.15/microsoft.extensions.dependencymodel.10.0.15.nupkg.sha512",
     "/home/tirex/.nuget/packages/microsoft.visualstudio.solutionpersistence/1.0.52/microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "/home/tirex/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
